@@ -62,6 +62,8 @@
                             <a class="nav-link" href="#openAdressing" style="padding-top: 0px;
                             padding-bottom: 0px;padding-left: 20px;padding-right: 0px;">14.5.Геш-таблиці з відкритою
                                 адресацією</a>
+                            <a class="nav-link" href="#demo" style="padding-top: 0px;
+                            padding-bottom: 0px;padding-left: 20px;padding-right: 0px;">14.6.Демо</a>
                         </li>
                     </ul>
                     <!--//social-list-->
@@ -101,7 +103,8 @@
                         не потрібно жодної додаткової пам'яті, кількість додавань і перевірок в найгіршому випадку рівна
                         O(n<sup>2</sup>) в найгіршому випадку.
                     </p>
-                    <img width="700px" src="assets/images/lesson14_image1.png" style="margin-bottom: 10px;" alt="">
+                    <img src="assets/images/lesson14_image1.png" style="margin-bottom: 10px;width:100%;max-width:700px"
+                        alt="">
                     <p>
                         Звичайно,такий код написати дуже просто і швидко. Але у випадку коли наш масив чисел перевищуе
                         10,000 елементів, пошук такої пари може затягнутись.
@@ -113,13 +116,15 @@
                         відсортуавти масив A і потім для кожного елементу x ∈ A, здійснити бінарний пошук існування його
                         пари, тоді складність алгоритму складе вже O(n log n).
                     </p>
-                    <img width="700px" src="assets/images/lesson14_image2.png" style="margin-bottom: 10px;" alt="">
+                    <img src="assets/images/lesson14_image2.png" style="margin-bottom: 10px;width:100%;max-width:700px"
+                        alt="">
                     <p>
                         В пошуках алгоритму,що буде відпрацьовувати за лінійний час, ми можемо спробувати використати
                         булевий масив, для представлення елементів з масиву A. В цьому масиві і-та позиція в масиві буде
                         містити '1' (or 'true') якщо і тільки якщо i належить масиву А.
                     </p>
-                    <img width="700px" src="assets/images/lesson14_image3.png" style="margin-bottom: 10px;" alt="">
+                    <img src="assets/images/lesson14_image3.png" style="margin-bottom: 10px;width:100%;max-width:700px"
+                        alt="">
                     <p> Відповідне доповнення до кожного елементу тоді можна буде знайти за константний час.
                         Водночас,такий підхід в адресації, коли місце елемента залежить від якогось ключа і і тільки i,
                         має серйозну проблему: Місце яке необхідно виділити під такий масив залежить від значення
@@ -127,7 +132,8 @@
                         швидкодії алгоритму, але, на жаль, оскільки це число(w) може бути представлене у вигляді
                         log<sub>2</sub> w бітів, це означає експотенціальний ріст розмірності в пам'яті.
                     </p>
-                    <img width="750" src="assets/images/lesson14_image4.png" style="margin-bottom: 10px;" alt="">
+                    <img src="assets/images/lesson14_image4.png" style="margin-bottom: 10px;width:100%;max-width:700px"
+                        alt="">
                     <p>
                         Постає питання чи можна закодувати елементи масиву так, щоб необхідна кількість пам'яті не була
                         такою величезною?<br>
@@ -160,7 +166,8 @@
                         видалення, пошук) перенаправляється об'єктові, який зберігається у відповідній комірці масиву
                         H[i].
                     </p>
-                    <img width="700px" src="assets/images/lesson14_image5.png" style="margin-bottom: 10px;" alt="">
+                    <img src="assets/images/lesson14_image5.png" style="margin-bottom: 10px;width:100%;max-width:700px"
+                        alt="">
                     <a name="colisions">
                         <h2>3.Поняття колізій в геш-таблиці та парадокс дня народження</h2>
                     </a>
@@ -230,7 +237,8 @@
                     що ми
                     маємо : 50, 700, 76, 85, 92, 73, 101.
                     </p>
-                    <img width="700px" src="assets/images/lesson14_image6.png" style="margin-bottom: 10px;" alt="">
+                    <img src="assets/images/lesson14_image6.png" style="margin-bottom: 10px;width:100%;max-width:700px"
+                        alt="">
                     <p>
                         Переваги геш-таблиць з ланцюжками:
                         <br>1) Легко в реалізації.
@@ -245,7 +253,8 @@
                         випадку.
                         <br>3) Для звязування використовується додаткова пам'ять.
                     </p>
-                    <img width="700px" src="assets/images/lesson14_image7.png" style="margin-bottom: 10px;" alt="">
+                    <img src="assets/images/lesson14_image7.png" style="margin-bottom: 10px;width:100%;max-width:700px"
+                        alt="">
                     <p>
                         Останнє питання яке залишилось це: яка ж ефективність використання такого типу геш-таблиць?
                         <br>
@@ -306,7 +315,8 @@
                         Нехай наше геш-функція буде вертати значення за принципом “key mod 7” і послідовність ключів
                         що ми маємо : 50, 700, 76, 85, 92, 73, 101.
                     </p>
-                    <img width="700px" src="assets/images/lesson14_image8.png" style="margin-bottom: 10px;" alt="">
+                    <img src="assets/images/lesson14_image8.png" style="margin-bottom: 10px;width:100%;max-width:700px"
+                        alt="">
                     <p>
                         <br>Недоліком усіх схем відкритої адресації є те, що кількість елементів, які можуть зберігатися
                         в таблиці може досягти кількість комірок в масиві. Дійсно, навіть з хорошими геш-функціями,
@@ -328,7 +338,8 @@
                         <br>Рівень заповнення таблиці α = n/m ( < 1 ) <br>Очікуваний час пошуку/видалення/додавання <
                                 1/(1 - α) </pre>
                     </p>
-                    <img width="700px" src="assets/images/lesson14_image9.png" style="margin-bottom: 10px;" alt="">
+                    <img src="assets/images/lesson14_image9.png" style="margin-bottom: 10px;width:100%;max-width:700px"
+                        alt="">
 
                     <p>
                         Узагальнюючи, відкриту адресацію краще використовувати для геш-таблиць з малими
@@ -337,16 +348,21 @@
                         елементи великі за розміром, або можуть мати різні розміри, метод ланцюжків показує
                         таку ж або кращу продуктивність.
                     </p>
+                    <a name="demo">
+                        <h2>6.Демо</h2>
+                    </a>
+                    <iframe src="hashTableVisualizer/visualizer.html" style="width: 100%;max-width: 1200px"
+                        height="700">
+                        Не підтримуються фрейми
+                    </iframe>
+
+                    <nav class=" blog-nav nav nav-justified my-5 ">
+                        <a class="nav-link-prev nav-item nav-link rounded-left " href="index.html ">Previous<i
+                                class="arrow-prev fas fa-long-arrow-alt-left "></i></a>
+                    </nav>
                 </div>
             </div>
-            <iframe src="hashTableVisualizer/visualizer.html" style="width: 100%;max-width: 1200px" height="700">
-                Не підтримуються фрейми
-            </iframe>
 
-            <nav class=" blog-nav nav nav-justified my-5 ">
-                <a class="nav-link-prev nav-item nav-link rounded-left " href="index.html ">Previous<i
-                        class="arrow-prev fas fa-long-arrow-alt-left "></i></a>
-            </nav>
             <!--//container-->
         </article>
 
